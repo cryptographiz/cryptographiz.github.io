@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <title>Cryptographiz - Cryptographiz</title><meta name="gridsome:hash" content="b1b9c0651b7cf955692acb2255ac977603e42eb6"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.23"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/static/favicon.62d22cb.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/assets/static/favicon.dc0cdc5.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/static/favicon.7b22250.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link data-vue-tag="ssr" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"><link data-vue-tag="ssr" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"><link rel="preload" href="/assets/css/6.styles.2066ca87.css" as="style"><link rel="preload" href="/assets/js/app.8951d065.js" as="script"><link rel="preload" href="/assets/js/page--src--templates--article-vue.c0873d9a.js" as="script"><link rel="preload" href="/assets/js/vue-remark--articles--length-extend-md.cc5c3d38.js" as="script"><link rel="prefetch" href="/assets/js/page--node-modules--gridsome--app--pages--404-vue.bda2c9b2.js"><link rel="prefetch" href="/assets/js/page--src--pages--articles-vue.b873f525.js"><link rel="prefetch" href="/assets/js/page--src--pages--contact-vue.e0c9d1ac.js"><link rel="prefetch" href="/assets/js/page--src--pages--index-vue.de15de25.js"><link rel="prefetch" href="/assets/js/vendors~vue-remark--articles--length-extend-md.df5c11b7.js"><link rel="stylesheet" href="/assets/css/6.styles.2066ca87.css"><style data-vue-tag="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">.v-application a { color: #4a7c59; }
+.v-application .primary {
+  background-color: #4a7c59 !important;
+  border-color: #4a7c59 !important;
+}
+.v-application .primary--text {
+  color: #4a7c59 !important;
+  caret-color: #4a7c59 !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: #cfffdd !important;
+  border-color: #cfffdd !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: #cfffdd !important;
+  caret-color: #cfffdd !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: #b3e9c1 !important;
+  border-color: #b3e9c1 !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: #b3e9c1 !important;
+  caret-color: #b3e9c1 !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: #97cca6 !important;
+  border-color: #97cca6 !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: #97cca6 !important;
+  caret-color: #97cca6 !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: #7db18b !important;
+  border-color: #7db18b !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: #7db18b !important;
+  caret-color: #7db18b !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: #639672 !important;
+  border-color: #639672 !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: #639672 !important;
+  caret-color: #639672 !important;
+}
+.v-application .primary.darken-1 {
+  background-color: #316341 !important;
+  border-color: #316341 !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: #316341 !important;
+  caret-color: #316341 !important;
+}
+.v-application .primary.darken-2 {
+  background-color: #194b2b !important;
+  border-color: #194b2b !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: #194b2b !important;
+  caret-color: #194b2b !important;
+}
+.v-application .primary.darken-3 {
+  background-color: #003416 !important;
+  border-color: #003416 !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: #003416 !important;
+  caret-color: #003416 !important;
+}
+.v-application .primary.darken-4 {
+  background-color: #002000 !important;
+  border-color: #002000 !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: #002000 !important;
+  caret-color: #002000 !important;
+}
+.v-application .secondary {
+  background-color: #4a6d7c !important;
+  border-color: #4a6d7c !important;
+}
+.v-application .secondary--text {
+  color: #4a6d7c !important;
+  caret-color: #4a6d7c !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: #cff4ff !important;
+  border-color: #cff4ff !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: #cff4ff !important;
+  caret-color: #cff4ff !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: #b3d7e8 !important;
+  border-color: #b3d7e8 !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: #b3d7e8 !important;
+  caret-color: #b3d7e8 !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: #97bbcc !important;
+  border-color: #97bbcc !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: #97bbcc !important;
+  caret-color: #97bbcc !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: #7da0b1 !important;
+  border-color: #7da0b1 !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: #7da0b1 !important;
+  caret-color: #7da0b1 !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: #638696 !important;
+  border-color: #638696 !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: #638696 !important;
+  caret-color: #638696 !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: #315563 !important;
+  border-color: #315563 !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: #315563 !important;
+  caret-color: #315563 !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: #193e4b !important;
+  border-color: #193e4b !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: #193e4b !important;
+  caret-color: #193e4b !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: #002835 !important;
+  border-color: #002835 !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: #002835 !important;
+  caret-color: #002835 !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: #00141f !important;
+  border-color: #00141f !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: #00141f !important;
+  caret-color: #00141f !important;
+}
+.v-application .accent {
+  background-color: #ffa047 !important;
+  border-color: #ffa047 !important;
+}
+.v-application .accent--text {
+  color: #ffa047 !important;
+  caret-color: #ffa047 !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: #ffffce !important;
+  border-color: #ffffce !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: #ffffce !important;
+  caret-color: #ffffce !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: #ffffb2 !important;
+  border-color: #ffffb2 !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: #ffffb2 !important;
+  caret-color: #ffffb2 !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: #fff497 !important;
+  border-color: #fff497 !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: #fff497 !important;
+  caret-color: #fff497 !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: #ffd77c !important;
+  border-color: #ffd77c !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: #ffd77c !important;
+  caret-color: #ffd77c !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: #ffbb61 !important;
+  border-color: #ffbb61 !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: #ffbb61 !important;
+  caret-color: #ffbb61 !important;
+}
+.v-application .accent.darken-1 {
+  background-color: #e0862c !important;
+  border-color: #e0862c !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: #e0862c !important;
+  caret-color: #e0862c !important;
+}
+.v-application .accent.darken-2 {
+  background-color: #c16c0d !important;
+  border-color: #c16c0d !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: #c16c0d !important;
+  caret-color: #c16c0d !important;
+}
+.v-application .accent.darken-3 {
+  background-color: #a35300 !important;
+  border-color: #a35300 !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: #a35300 !important;
+  caret-color: #a35300 !important;
+}
+.v-application .accent.darken-4 {
+  background-color: #853b00 !important;
+  border-color: #853b00 !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: #853b00 !important;
+  caret-color: #853b00 !important;
+}
+.v-application .error {
+  background-color: #9e0505 !important;
+  border-color: #9e0505 !important;
+}
+.v-application .error--text {
+  color: #9e0505 !important;
+  caret-color: #9e0505 !important;
+}
+.v-application .error.lighten-5 {
+  background-color: #ff9f7d !important;
+  border-color: #ff9f7d !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: #ff9f7d !important;
+  caret-color: #ff9f7d !important;
+}
+.v-application .error.lighten-4 {
+  background-color: #ff8364 !important;
+  border-color: #ff8364 !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: #ff8364 !important;
+  caret-color: #ff8364 !important;
+}
+.v-application .error.lighten-3 {
+  background-color: #fd684b !important;
+  border-color: #fd684b !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: #fd684b !important;
+  caret-color: #fd684b !important;
+}
+.v-application .error.lighten-2 {
+  background-color: #dd4c34 !important;
+  border-color: #dd4c34 !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: #dd4c34 !important;
+  caret-color: #dd4c34 !important;
+}
+.v-application .error.lighten-1 {
+  background-color: #bd2f1d !important;
+  border-color: #bd2f1d !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: #bd2f1d !important;
+  caret-color: #bd2f1d !important;
+}
+.v-application .error.darken-1 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.v-application .error.darken-2 {
+  background-color: #630000 !important;
+  border-color: #630000 !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: #630000 !important;
+  caret-color: #630000 !important;
+}
+.v-application .error.darken-3 {
+  background-color: #4b0000 !important;
+  border-color: #4b0000 !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: #4b0000 !important;
+  caret-color: #4b0000 !important;
+}
+.v-application .error.darken-4 {
+  background-color: #400000 !important;
+  border-color: #400000 !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: #400000 !important;
+  caret-color: #400000 !important;
+}
+.v-application .info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.v-application .info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.v-application .info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.v-application .info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.v-application .info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.v-application .info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.v-application .info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.v-application .info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.v-application .info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.v-application .info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.v-application .info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.v-application .success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.v-application .success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.v-application .success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.v-application .success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.v-application .success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.v-application .success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.v-application .success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.v-application .success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.v-application .success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.v-application .warning {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+}
+.v-application .warning--text {
+  color: #ffc107 !important;
+  caret-color: #ffc107 !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: #ffffae !important;
+  border-color: #ffffae !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: #ffffae !important;
+  caret-color: #ffffae !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: #ffff91 !important;
+  border-color: #ffff91 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: #ffff91 !important;
+  caret-color: #ffff91 !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: #ffff74 !important;
+  border-color: #ffff74 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: #ffff74 !important;
+  caret-color: #ffff74 !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: #fff956 !important;
+  border-color: #fff956 !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: #fff956 !important;
+  caret-color: #fff956 !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: #ffdd37 !important;
+  border-color: #ffdd37 !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: #ffdd37 !important;
+  caret-color: #ffdd37 !important;
+}
+.v-application .warning.darken-1 {
+  background-color: #e0a600 !important;
+  border-color: #e0a600 !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: #e0a600 !important;
+  caret-color: #e0a600 !important;
+}
+.v-application .warning.darken-2 {
+  background-color: #c18c00 !important;
+  border-color: #c18c00 !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: #c18c00 !important;
+  caret-color: #c18c00 !important;
+}
+.v-application .warning.darken-3 {
+  background-color: #a27300 !important;
+  border-color: #a27300 !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: #a27300 !important;
+  caret-color: #a27300 !important;
+}
+.v-application .warning.darken-4 {
+  background-color: #855a00 !important;
+  border-color: #855a00 !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: #855a00 !important;
+  caret-color: #855a00 !important;
+}</style><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
+  </head>
+  <body >
+    <div data-app="true" data-server-rendered="true" id="app" id="app" class="v-application v-application--is-ltr theme--light" data-v-fc2fa956><div class="v-application--wrap"><nav><header elevate-on-scroll="true" hide-on-scroll="true" class="v-sheet theme--dark v-toolbar primary overflow-hidden" style="height:56px;"><div class="v-toolbar__content" style="height:56px;"><button type="button" class="v-app-bar__nav-icon d-flex d-sm-none v-btn v-btn--icon v-btn--round theme--dark v-size--default"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate fas fa-bars theme--dark"></i></span></button><a href="/" class="v-btn v-btn--text theme--dark v-size--large"><span class="v-btn__content"><img src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 35 35' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-5f0d66073a068a8eac8266604385c7cc'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='40'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-5f0d66073a068a8eac8266604385c7cc)' width='35' height='35' xlink:href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAYFUlEQVR42tWaCXAU55XHWzOyN9nNVk4DM4NBB0jckHirktQmG26QxCkhQCCMTsRtTjtrkLp1C4ID5j6k6R6diCNONk6tDQaZG11IIIEw2MSOQ7ZsKhsndmqtOfrb//u%2b7pnRYUMSG%2bOpetWj65v%2b/97/ve9oSdI/%2bJp7xSXNvVwm3jdrIYlNmjWxoaLL78yq1/5l5iV19IwLauL0C%2bp/xp1TKxGXY86qb089o96d8rqzYlKd88fm70885Qyh6/jXnNIj%2b5rfoklJzeX8fVKLK2R%2bs2YN/nlCgzoyvl7dOPuy%2bptZl9S7sy5rLL71MIu/doTNulLDpl2uZLEXXCzmnMZi62tYzOVqBuEVMS8f7QJh7EvqoyV8YYtKgvn7Ba0avQ/1u6FZ/Q4csGpOo1af0Kix%2bR1HWWLbYTa7qYLNvKjqyL5n2nnVjex7Ys%2bq3pgzqg/Z1yfXOT2TTjvdsS3H2YRTzsMcwGlnCN5LY08%2bIi5IaXFKyVddARCtLn/GAcE2/4q2DSXwp4VvHGHz2mpYQr2mx19W3bMuqx7Y3zdDANABQI89p%2bqwvz71jFM3AOgAoENw55TLh9n4k84ZvAROOq2PhPhFV1Vp0TUh/ulrrpCF14T4BS2ux5NatFyI/2jR7aNsXks5S2zU3AkNmjceAGB/HfbXKfszDPFxBADikX196usCAOpfn0gAXnO6J1%2bqYeNOOmsFgDLr2Fe/YAcshvBFbX7xFvP7yVe1qSiBOyl3jrGk1nI2r1lzw/4%2b2F8HAN0EgOzrM4IBnDMBdM0%2bap4AeCeerWRjTzgb6TMmvXZAwvsv0PbtLulpU3xboNZRCjsX3zrMFt2oZsh%2b57wrmm9uk6YDgM4BmNkPAjA9CEB3%2b08U9tfHE4BzVQTgojELhHxhALj49q7ice2LUqhPf%2bc4W9Dq8qL2vQCgI/s6BwDxc4Ky38P%2b5wL2n/K6KrJfZ2SfAJx0uiddOkwA9vIZ4ITTOvZE6RcgHjW/%2bIaY4ha3C/GLr2nDAOC9tDtH2MKrrk7YX0f96yYAf/Z7sf/0bgCmcgA97Y/a18fXlbOfvOr8rgHA8tDFp153SamG%2bJTrhvh2179B/Eept2oY7N8JAGxBiwDAs28CaBAAZgNAb/Y3ur8PADwA4AYAN01/yL5nQp3GpjQeo%2bxv4uKNGWDsybKHKL69vId4lMIIAPhr6q1qBvu7k0l8q6tL9k37J3yy/T3IvpuyH3exnMU1VLO4psMstqmWxTTWsino/Kj3P4474cyiz5xQVyaN/e8y6ak/n3n42TeuVuNqB4h7aberGRzgBgCyvx4MYG6v9tc4AGTfTdmf1VzNZrUeYXFY%2bSH77yL7dci%2bE9kvgP2fg/0TYf9v8MZ3uizkJ6%2bIxjf21YeY/fSbQnzaDRdfgi5/s8YCAK2Zv60V4ttcZH8dCyCd6t%2bf/eZuzU/Y301L34S2IwwAGBxwFvbfEHvW%2bdTUOuc/f9I9AIL1xy%2bb4h9y94dwkf0b5SL7N1xlS%2b8eZ7B/JwDoyL6efFWI783%2bAMAAwIvsexPba2np2wkH7Jt%2bQRvZ/bPQB0LgACscYIUDQuEAK2YADn7Caac07mFmnme/w5/9UOM6N%2bvdowz29wCAbgJY2A1AkP0Z7O%2be01zB5lyF3S%2bpVQAQYY4//bwagh4QCgdYsPqTJkPk5NdVCQCkp4zNzthXvsBNT9LvqqR0w/oZN1zfAID3029VMTRA7%2bKg7HP7k/iWLtlnyL57Xjs2PfXaPYifbo6LBhiKErBAuAlCQiN8tHZ36R2i66d1iMYHN%2bwh6yP7ncg%2b62r/Xru/O6njCOyv1s%2b%2bpPbh%2b/9LaigcwOfwWefLpJmXNOmRfkG0RTTC8uEIhvrXAUA37Z/M7a/1Zn8uHnv/X5tjYQr0L5nRDAnGoy0%2bo10Nzn7l0t8fZej%2b7uDaF/bXgu3PkH33go5asv8pcyw0QatxffSFB5UAz37GzfJoAPBhFiD7%2b7oDENl3mfb3JLVV09b39pxG11fFCZAQj6s0%2b%2bKXRLwhPNS4liz7w3Gyv7un/XvUP4P92ZxGdTT9LWaBUFP8nPovkXjzlfmG6yvI/tsZb1aT/b097U/d38j%2bFc2dfOsoAcimv4ULHjMgSPFNX0LxPPsdrpisd2op%2b97g7AfZnxnZ9y5or6L6vz27SZROYrMmzUPW0QukL%2b0LfWD3srvHPsX%2b/u7vSb51hACk80PQJmH9OU0PX/y0umoewe%2bnnUZcQDQhGqulOFxn4ZrUVCXNa6iW4s8e47%2bfeLG2B4CrmXdqerf/VbH4Sbqi%2bZLaKkn8O4mN6j8ZAHg86GtSnVNijEk/OXEIK0FnSMwZ1YIVopUWS%2basMf2CE7OI6xPHGHta9T8vGHdKlbCVDsFy2oqxrdhkWTGmFYstK42LPQiNbcWaxIrxrZiiLbONHoX30uxGlds/HAA%2bTuvg3V/vufT1Nz83HXxC8DbjIYjIfvP9635ynVj2muf9U%2bp6P%2b1NqFf930dv6fFz/C1CfB6EW6acFvuHv/VFD2%2bSr6v%2bRVBs1ttG/bcH2f9qkP2vcABwQBU1vx8Z2bckPmDTM8Xjaglyw7emnnGOQ6bisEQeHXRzloyr4hhs/pXA%2bBMxxgTjGQHE%2b0FhIxUFMFMxXiw2WDEYMxabrdi4c85YOCAWDoiFA2LggFhk/bvff%2b0Qhza/2WWhhzsEYC2vfyx%2bUoR4OvigrS9D96eTH8bFX4P9m7U/QPTXDAc8kP0ndxM//oTzcdzoTmyK/kRPh2Y2VTEslRlWjW0J9VqsGBsr08nLpcUdlVJKq/iMSaf8DrIK4eoYgHgdX/umXqxkMZerWBxiWkMVm9FYxcelc4j4K1UsoaWazWmtZglN5bRpuwl3JQnAGt8DVGT97kgvO78uS1/vwpuHyf581TfviisksfHBp7yJhlXHn3J%2bFSDqp189xmLPa3RO4MWGyYvs%2bBKxi0zCyhJglxqfYRVH8Zof4oRTZVbDAZMmnlZZTH0No3NF1L435ozTS0%2bb4CjvdGNcZJ7GxhZd9dKzCkzVvvnXqtiit44xTOeF5hb4WsZtvvPzBdnfOPnxT39m999v2N9KDrjfayrVPmoWN2kxXKCSeFj0/3CjPjouo5MjOkjBzbkxJlvQVgHnad8zHr1Zuj8wxbUvgH4w9XwFg/BOOl6nY3Y6cKVzRzqBonNIGpeO5mhsOqmiMwvavNEqlvTQ8wz0t3g6%2bLiXdrOCBWXfsL/G7Z8kVn7uZDRADJJr1GnogzpgspF9iB%2bM5uejI3G62el%2b8So/TqObo2cMqXeOsuRrWhV//HbVZV3Y6pS%2b91IpjRNqjKPENR9hKKFOjMWw1faLJ6AzA%2bJpk4axVbpvSh6VMjkawgHgVg2VeqPEa/%2b6ywTgr38j%2b/RHTAA4hoHU50SHDuz4Pu01BQ6gqYm/f92ZOr25ltHhKImnE%2bPZRnYM8eQ43%2bKOKtqCv5Vxvfxx8/kEHMRPkYxx6uhQNeas0xucdRI%2b0591Ei/OKoyscx2UUNrUUYN/ur0cn6P9lRzw5xRsgEwAyeLgk%2bzBARjnfgYA7aemA6JfLHygEsCNcwBTz6jrZrbUMtSnh26WDk75TQbE0435UjoqqB%2b9l36j/FvGwSzWC05p9R3xPwd43zK9oZJAentk3QBKJ1SJQjiNzYysc13U38jpKdcx7bdrHimxvvR/0t6oJBrm4ifY/szc%2bi7E%2bj%2bm7mCeufn59hblAVZrqoTpiAOIO%2btMnt16mM4K3ZQlUzzdJPUZnpU2lzf9djVDX3oj641Ki%2bhR5VLsOVWCWP41hL9K/19Aj9pndql1GlM1a52Z4rGH4cKTr2qkkSeaZjta9yxuc%2brSD49vb8h8i%2bpB8wWOvf32N09%2bPPOu17Khzq0H6CZ%2b/PJu6xNbch%2boB2Blx6077bxzAJpT5%2bzL/PzQRzdqil8oxFMj7lx29zhLv%2bk6YKxRrEuM80pa0RnXtQntRwnkx1TnQrg4liegcwNZN13Fy5rGpxMuOAqh6VlvVrH4C7t0ybFDURNayvGhFR6qD37wQas/85FXo6ovvFbhGX%2b6jH27OOcVugnHjnxL35/d3wGxcMCS9lpadlqNE6IXFrz5ErbR2scY22uKX9TGZ6BOmo3Sb5Z7ACDCOKrnWceyWZp1UfSAmefUryLrbydeqyHxH88xYM4NWF4P1LrG7U7CaZVrisfWnwMYUbq%2bU%2bqzLXt9VMULbF6T05N6o4ITM5vf/CvkiHIWd%2baQr/%2beItZnq/LW4INbeHPqAwC2n98fwtdrd2CJa06ZeVQ%2bv3r6t79gC7GrNGuSetDSd4%2byzFuVlP1Z4nxCrAOwVJemnfOv3y3GdSSy/seF6Ev0PwlGkzM6vHh%2bYWY9RWRdR1kxEr4UwpfcrtR/cCSHPZG3%2bEMpbE/uLMe%2bQha%2bL88z4dXdIOnkDqAB4y%2bX6T/6r526Y0eu3nebzCAYV2UY3US/FxSLfcf9Acy8IG5%2bToPqX7dj7LWw55u4SV/KjQpahn8Iu/8aMcY4mzROqQKbohnGOPHGfgFZtyHrpRD/HgmnRJluMuyuc%2bEd5Tr2Olx8SrvKZp7doQ8/uM7XpzCV2Usy7kpP7lKGDNit%2bBw7Zdbv5zm%2bsL15%2bpCyIj26tEgfsDsPgnN0%2b3ZFh1i3Y/8WZtuuLKMbAIzQB10Jxhs7sIQgCIuulIWi70QjQ99Nu6H1CzyhEg9mnn7vIq1S/WPQbtHcycUHbZqSWtSvz29Wh2e%2bWRs14eVtkwbvXPdx1K51LGrXGj1q9zN61B6K1Xo0Inz7Mr1PQYreJz/F03/7UmYrTj8vhe/NfRwA7gzcn88IRP%2bdMsTm8HC8KOtP7lRwRexQPP33FTPAOEkf3P9FxfIEysCx8/4uQPbpH6jEeyyg4IAeu0FkyhI4na6E9XuuNBMaXJK5AEPt83/JC/75tzenp9i2rGR98zLcffPS9b75aXrfglR/9CtM1ZF1CrdjxzICsIv/4cA9ytFwZzEbsEfxIJB5EXAHB9DfCIBgPHaIMsDVEr1XJhc92AOYFpX%2bzUb8kxV2YnCABQ6woARCTMH0iC6j49NXmfMNmON%2bvU2KPbUzZOrJFzk4e8GyVsfWlcxelOW1Fy3R7cWZiAxDdLqI4nQdwj0O7oC0RD5Q2F55SYRWwsL2Kh7A0AcGQegGwj3gUAlD9vk0ha95GTwogM/yZctfzq/2/GWhhviZjq2rma0gy2srXKLbijJ5kODggHiffUsGZf8v/YrT7HyQ8H1yOKIzfL/CwvYpOkDoA/cKEF1g7OIwGGB4IT7KgMDpD9gtPzzxuSskh7ICEHg7kvo%2btyIEIG7YS1Z2A5BBgrtDMLKfLh7mROyXuYCIA8orkVoRAwRPOEEwQIQFgxAwPGGlxQwg%2bABhexRrv%2b0yIOZKA3d//k6w5a2S7ADAs563/DHhguWyY9taiF/qsRdk6fcHwOufnwlIkQcU3kgiDypJgyuKGUB4AEWP2K/o4RS9w/CElRVT08w0eshjRikhPj8INmUVsr/SEL/iMQFkxY/shaj7/GW6vWCpbvsUANz%2bP8tkeP872P8rfKBBh8QNRx6SH8f7O4PUfAYYXoDRIyi6gxAwfGH7chmE%2bxDfE%2bIFBPyuFPY5OMGurIb4VeJ97spQ42oHgPftRasIgBcOYLbCrgC4%2bJJ0E4Tb8eJyyv5mDq84PdSEwN8MLpXXRtdsYfjaPeigQiB0ioieMKhXeMIP5VPjfB8QnuQQ9gkIfhCq8hkIX4PMPyM58laaLhCZV1Z/DQCuO0rWQPxyN5og4w4AALsJoLiLA3z2rZkk/l6/kvRvGABCyPrS4DLRwKLKlK8AwjtRWj7D1QsQOkXkQZmD6OYK3i8iygoJxu8RUUK4/BgAhRj9hXrL3y9eXivZ5DVCOK5wgaj53FV2xA1HCeo%2bb7kbMwLqfxnsLwDYugFAkHB3f579tGe6ZD/SKIGoMpn3gminnDL0cAnD1%2b6oUgUgFJ1i0CFZH3SwBwwGGJ7IsgIspZUPEZPNm8f3QyP3i7Ej9gHEoQcH0S9nLRfPxeasg/i1oYE%2bsPo/4IJ7jmISvwLiV5ADdAIgHLCEh71IrAFs5rz/QhbVfqt/nOJ0yVaSLr6AQGmIJkvRpSJzgHBqaE0xi3ICQpkCGAKCAGGECQKlQo0z8lAeiyjNJ1cUYzbgMAeVbiYXhOLnIRH7FMDOgUNyuSsi9wWAPCk/L9k2bZRs2RukPtlrpX6b8X7zhhB79nq/8L4566w2%2bZkCex4sX7CGoRm6AYAcoJsN0D8DFPZogGbz%2b6Eh3mpCEADKxM0MUcWUiGvkEFXpHKLlMsDwIXQ4QhcgZAHjUDAM3i%2b8EQcV3%2bCKEnLFTcTc4KxGHpAt5AqEFWsOC5UJxcCdOSH9C34aYt%2b80YKwIkIdmzZ0eeABB8yzy2tuOUqeYygDHQ7wAgA5QBcAljMTAOqfBc8AiE6j8cnB1kcpdLUdRJoQ%2bC8M1eTU4UdKGEB48D2dIHAQTsWAIfcKAyDcg9QCNqicT6ktEJyF6Pc3T3nZGyJs2evXowSuO4ogPH8DxD/j5gByVyFW6iYAm%2bmArjMA4%2bLFmv8EX7QVpfOs9y/MhP27ARjiVKQodO0fVGRLQ1zCwkNd8p4Rx7ewoRrcoCoEQ4/mMBQeJohAicgmCC9AeAZrhWxwZQmB%2bAsgvIrYhIiDA0aiaToQTwzYkW235zw7uN%2bGdd%2b3Pb9hARzwM9j/AgC4HUWbmD3vWQYHeOAALwAg%2b90A5AeVQAAARGPD8wJf8b2Frv%2bvRva5w/213/01TBOlMMwl%2by04rFz%2bzUiC4JI74QodMHQCISIYhojBXfsFzSSeQaW5bHB5EYcxCKtNYxb5CCXwQfhe%2bcOwXTnuAT/PYf2LNjNHASLveQYAiHVuOMALADoA6CYAezcA5ACbAQCbIGyGMt2ObVz8%2b7B6WPe671ec8snWG6bJJgROK0rdbB1eLp8bdbyEAUbnMJeiD6UgEJqAwEGoZokY5RHULwDBx0EclN2YRcgdLPJQLo%2bIg4gDuSz8QK4vbI/sceQ957Zt2uC1Z2/wAYAOALoJAOsB3V8CeSsN%2bwcAYArEQmgJxGNNUJzxR3tJGp%2ba7UbdY0H06eK5cFWGeMXMvkVAyQ0dXiHXjXppC0FwI3wABBDCEcEwoj%2bxX/Q6i/gCawuZXwGB2XM26rbN63U7B0DiAw4IAFjhB2D3T4FZnY4XVpAD7iLTg3jGizJCDQjSE/mpD9aARgAARPL3EO5/PDWiUq4Y/cstDN/TEZ5h5QoB0YNhDAkqEbM8oruCYAYIFphBZDGdAgLWJWzA1ud12yaRfQFgTQBALw0Q2ccyOAubnNUQv6QBAL4jRBviizIk%2b9a0v60LU1McXiGcMCIIwshK%2bdmRh/PZqCMFBKLTgKELEIoeKBE5CEaXxsmMfsEMGMyAwUHQNXxXNneAjewPALYg%2b3cHgAbothctZ45tq8j%2b%2b/2ryKJMq3GVHCWpf99SFDdP4k0IIcMrxd5/ZJX874jbY361hY2oVBCy2wQxvNyEIftBdGucTMAgEByGHwRNp3SN3JcD%2bxsAZAHAHgQAewAdu0EPAXBsW0Pb4PfhgAT/FFq4xGKK75ef8Y9tRkbABRBoZp/ec1uNPpzzGCBsQfjGvFRMEHQCgd/3dXFFufJpJcI4CBNGKb3HWmJvNmaA9YEGqPgB%2bADADQf4HFvXMtoGowT22/KXfpMLLsyyQnyIAQH1v%2bSz246S%2bGFV4mkQRPsPI0dVy9GII6MO57IxvyxhI2tyuSPgDA8g%2bLq7AsGEK2Q2hEKl4CB4j4jWUALbAz0AJeBD/XsAwGPPe4Y5tmBBVIBaz1vxKzTAp/yWL1ga2C8ULMV0l/XZH0iMqlZIvAkhZGS17P/Q0dXyaIA4iPiAQIz%2bRZEBQ/EaJUJAvMNpBunSOEXw6VRTaNntdeRu9Ng2r3OjBLz23PXMUfwsYiMtg/8XDjhoz1sZEJ6/zIqNUIhxLijBDZ//mRxBGH0013SABSD8TXJ0jfIEvpeBeAW/98GY40XMDwSNc0RNHhtRlcvQT9iwCppF6Iqvq/LYsMp8NnBbNrL7PATTKnAjVoFr7mET9BIc8DQWQd8JHI2tsMAB/HMH5iHj%2bSse7qnsmBqFxPudQSAQXc7p4Yq%2bo6rkafh%2bIWC8jLiOuAdHfIj4GI4gZ3TCER9FHcj%2b05MFz72L5XADGmA11gA/xRQ4Dvb/ZpczgtxVVjjA8mShcSqct1Lqn7/y79bx//PqSP6Mi62SAAAAAElFTkSuQmCC' /%3e%3c/svg%3e" width="35" data-src="/assets/static/favicon.c14ae18.9bb7ffafafc09ac851d81afb65b8ef59.png" data-srcset="/assets/static/favicon.c14ae18.9bb7ffafafc09ac851d81afb65b8ef59.png 35w" data-sizes="(max-width: 35px) 100vw, 35px" class="mr-5 g-image g-image--lazy g-image--loading"><noscript><img src="/assets/static/favicon.c14ae18.9bb7ffafafc09ac851d81afb65b8ef59.png" class="mr-5 g-image g-image--loaded" width="35"></noscript><span class="headline font-weight-bold">Cryptographiz</span></span></a><div class="spacer"></div><div class="v-toolbar__items d-none d-sm-flex"><a href="/" class="v-btn v-btn--router v-btn--text theme--dark v-size--default"><span class="v-btn__content">Home</span></a><a href="/articles" class="v-btn v-btn--router v-btn--text theme--dark v-size--default"><span class="v-btn__content">Articles</span></a><a href="/contact" class="v-btn v-btn--router v-btn--text theme--dark v-size--default"><span class="v-btn__content">Contact</span></a></div></div></header><aside class="d-flex d-sm-none dark v-navigation-drawer v-navigation-drawer--absolute v-navigation-drawer--close v-navigation-drawer--is-mobile theme--light" style="height:100%;top:0px;transform:translateX(-100%);width:256px;"><div class="v-navigation-drawer__content"><div tabindex="-1" class="v-list-item theme--light"><div class="v-avatar v-list-item__avatar" style="height:40px;min-width:40px;width:40px;"><img src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 245 245' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-5f0d66073a068a8eac8266604385c7cc'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='40'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-5f0d66073a068a8eac8266604385c7cc)' width='245' height='245' xlink:href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAYFUlEQVR42tWaCXAU55XHWzOyN9nNVk4DM4NBB0jckHirktQmG26QxCkhQCCMTsRtTjtrkLp1C4ID5j6k6R6diCNONk6tDQaZG11IIIEw2MSOQ7ZsKhsndmqtOfrb//u%2b7pnRYUMSG%2bOpetWj65v%2b/97/ve9oSdI/%2bJp7xSXNvVwm3jdrIYlNmjWxoaLL78yq1/5l5iV19IwLauL0C%2bp/xp1TKxGXY86qb089o96d8rqzYlKd88fm70885Qyh6/jXnNIj%2b5rfoklJzeX8fVKLK2R%2bs2YN/nlCgzoyvl7dOPuy%2bptZl9S7sy5rLL71MIu/doTNulLDpl2uZLEXXCzmnMZi62tYzOVqBuEVMS8f7QJh7EvqoyV8YYtKgvn7Ba0avQ/1u6FZ/Q4csGpOo1af0Kix%2bR1HWWLbYTa7qYLNvKjqyL5n2nnVjex7Ys%2bq3pgzqg/Z1yfXOT2TTjvdsS3H2YRTzsMcwGlnCN5LY08%2bIi5IaXFKyVddARCtLn/GAcE2/4q2DSXwp4VvHGHz2mpYQr2mx19W3bMuqx7Y3zdDANABQI89p%2bqwvz71jFM3AOgAoENw55TLh9n4k84ZvAROOq2PhPhFV1Vp0TUh/ulrrpCF14T4BS2ux5NatFyI/2jR7aNsXks5S2zU3AkNmjceAGB/HfbXKfszDPFxBADikX196usCAOpfn0gAXnO6J1%2bqYeNOOmsFgDLr2Fe/YAcshvBFbX7xFvP7yVe1qSiBOyl3jrGk1nI2r1lzw/4%2b2F8HAN0EgOzrM4IBnDMBdM0%2bap4AeCeerWRjTzgb6TMmvXZAwvsv0PbtLulpU3xboNZRCjsX3zrMFt2oZsh%2b57wrmm9uk6YDgM4BmNkPAjA9CEB3%2b08U9tfHE4BzVQTgojELhHxhALj49q7ice2LUqhPf%2bc4W9Dq8qL2vQCgI/s6BwDxc4Ky38P%2b5wL2n/K6KrJfZ2SfAJx0uiddOkwA9vIZ4ITTOvZE6RcgHjW/%2bIaY4ha3C/GLr2nDAOC9tDtH2MKrrk7YX0f96yYAf/Z7sf/0bgCmcgA97Y/a18fXlbOfvOr8rgHA8tDFp153SamG%2bJTrhvh2179B/Eept2oY7N8JAGxBiwDAs28CaBAAZgNAb/Y3ur8PADwA4AYAN01/yL5nQp3GpjQeo%2bxv4uKNGWDsybKHKL69vId4lMIIAPhr6q1qBvu7k0l8q6tL9k37J3yy/T3IvpuyH3exnMU1VLO4psMstqmWxTTWsino/Kj3P4474cyiz5xQVyaN/e8y6ak/n3n42TeuVuNqB4h7aberGRzgBgCyvx4MYG6v9tc4AGTfTdmf1VzNZrUeYXFY%2bSH77yL7dci%2bE9kvgP2fg/0TYf9v8MZ3uizkJ6%2bIxjf21YeY/fSbQnzaDRdfgi5/s8YCAK2Zv60V4ttcZH8dCyCd6t%2bf/eZuzU/Y301L34S2IwwAGBxwFvbfEHvW%2bdTUOuc/f9I9AIL1xy%2bb4h9y94dwkf0b5SL7N1xlS%2b8eZ7B/JwDoyL6efFWI783%2bAMAAwIvsexPba2np2wkH7Jt%2bQRvZ/bPQB0LgACscYIUDQuEAK2YADn7Caac07mFmnme/w5/9UOM6N%2bvdowz29wCAbgJY2A1AkP0Z7O%2be01zB5lyF3S%2bpVQAQYY4//bwagh4QCgdYsPqTJkPk5NdVCQCkp4zNzthXvsBNT9LvqqR0w/oZN1zfAID3029VMTRA7%2bKg7HP7k/iWLtlnyL57Xjs2PfXaPYifbo6LBhiKErBAuAlCQiN8tHZ36R2i66d1iMYHN%2bwh6yP7ncg%2b62r/Xru/O6njCOyv1s%2b%2bpPbh%2b/9LaigcwOfwWefLpJmXNOmRfkG0RTTC8uEIhvrXAUA37Z/M7a/1Zn8uHnv/X5tjYQr0L5nRDAnGoy0%2bo10Nzn7l0t8fZej%2b7uDaF/bXgu3PkH33go5asv8pcyw0QatxffSFB5UAz37GzfJoAPBhFiD7%2b7oDENl3mfb3JLVV09b39pxG11fFCZAQj6s0%2b%2bKXRLwhPNS4liz7w3Gyv7un/XvUP4P92ZxGdTT9LWaBUFP8nPovkXjzlfmG6yvI/tsZb1aT/b097U/d38j%2bFc2dfOsoAcimv4ULHjMgSPFNX0LxPPsdrpisd2op%2b97g7AfZnxnZ9y5or6L6vz27SZROYrMmzUPW0QukL%2b0LfWD3srvHPsX%2b/u7vSb51hACk80PQJmH9OU0PX/y0umoewe%2bnnUZcQDQhGqulOFxn4ZrUVCXNa6iW4s8e47%2bfeLG2B4CrmXdqerf/VbH4Sbqi%2bZLaKkn8O4mN6j8ZAHg86GtSnVNijEk/OXEIK0FnSMwZ1YIVopUWS%2basMf2CE7OI6xPHGHta9T8vGHdKlbCVDsFy2oqxrdhkWTGmFYstK42LPQiNbcWaxIrxrZiiLbONHoX30uxGlds/HAA%2bTuvg3V/vufT1Nz83HXxC8DbjIYjIfvP9635ynVj2muf9U%2bp6P%2b1NqFf930dv6fFz/C1CfB6EW6acFvuHv/VFD2%2bSr6v%2bRVBs1ttG/bcH2f9qkP2vcABwQBU1vx8Z2bckPmDTM8Xjaglyw7emnnGOQ6bisEQeHXRzloyr4hhs/pXA%2bBMxxgTjGQHE%2b0FhIxUFMFMxXiw2WDEYMxabrdi4c85YOCAWDoiFA2LggFhk/bvff%2b0Qhza/2WWhhzsEYC2vfyx%2bUoR4OvigrS9D96eTH8bFX4P9m7U/QPTXDAc8kP0ndxM//oTzcdzoTmyK/kRPh2Y2VTEslRlWjW0J9VqsGBsr08nLpcUdlVJKq/iMSaf8DrIK4eoYgHgdX/umXqxkMZerWBxiWkMVm9FYxcelc4j4K1UsoaWazWmtZglN5bRpuwl3JQnAGt8DVGT97kgvO78uS1/vwpuHyf581TfviisksfHBp7yJhlXHn3J%2bFSDqp189xmLPa3RO4MWGyYvs%2bBKxi0zCyhJglxqfYRVH8Zof4oRTZVbDAZMmnlZZTH0No3NF1L435ozTS0%2bb4CjvdGNcZJ7GxhZd9dKzCkzVvvnXqtiit44xTOeF5hb4WsZtvvPzBdnfOPnxT39m999v2N9KDrjfayrVPmoWN2kxXKCSeFj0/3CjPjouo5MjOkjBzbkxJlvQVgHnad8zHr1Zuj8wxbUvgH4w9XwFg/BOOl6nY3Y6cKVzRzqBonNIGpeO5mhsOqmiMwvavNEqlvTQ8wz0t3g6%2bLiXdrOCBWXfsL/G7Z8kVn7uZDRADJJr1GnogzpgspF9iB%2bM5uejI3G62el%2b8So/TqObo2cMqXeOsuRrWhV//HbVZV3Y6pS%2b91IpjRNqjKPENR9hKKFOjMWw1faLJ6AzA%2bJpk4axVbpvSh6VMjkawgHgVg2VeqPEa/%2b6ywTgr38j%2b/RHTAA4hoHU50SHDuz4Pu01BQ6gqYm/f92ZOr25ltHhKImnE%2bPZRnYM8eQ43%2bKOKtqCv5Vxvfxx8/kEHMRPkYxx6uhQNeas0xucdRI%2b0591Ei/OKoyscx2UUNrUUYN/ur0cn6P9lRzw5xRsgEwAyeLgk%2bzBARjnfgYA7aemA6JfLHygEsCNcwBTz6jrZrbUMtSnh26WDk75TQbE0435UjoqqB%2b9l36j/FvGwSzWC05p9R3xPwd43zK9oZJAentk3QBKJ1SJQjiNzYysc13U38jpKdcx7bdrHimxvvR/0t6oJBrm4ifY/szc%2bi7E%2bj%2bm7mCeufn59hblAVZrqoTpiAOIO%2btMnt16mM4K3ZQlUzzdJPUZnpU2lzf9djVDX3oj641Ki%2bhR5VLsOVWCWP41hL9K/19Aj9pndql1GlM1a52Z4rGH4cKTr2qkkSeaZjta9yxuc%2brSD49vb8h8i%2bpB8wWOvf32N09%2bPPOu17Khzq0H6CZ%2b/PJu6xNbch%2boB2Blx6077bxzAJpT5%2bzL/PzQRzdqil8oxFMj7lx29zhLv%2bk6YKxRrEuM80pa0RnXtQntRwnkx1TnQrg4liegcwNZN13Fy5rGpxMuOAqh6VlvVrH4C7t0ybFDURNayvGhFR6qD37wQas/85FXo6ovvFbhGX%2b6jH27OOcVugnHjnxL35/d3wGxcMCS9lpadlqNE6IXFrz5ErbR2scY22uKX9TGZ6BOmo3Sb5Z7ACDCOKrnWceyWZp1UfSAmefUryLrbydeqyHxH88xYM4NWF4P1LrG7U7CaZVrisfWnwMYUbq%2bU%2bqzLXt9VMULbF6T05N6o4ITM5vf/CvkiHIWd%2baQr/%2beItZnq/LW4INbeHPqAwC2n98fwtdrd2CJa06ZeVQ%2bv3r6t79gC7GrNGuSetDSd4%2byzFuVlP1Z4nxCrAOwVJemnfOv3y3GdSSy/seF6Ev0PwlGkzM6vHh%2bYWY9RWRdR1kxEr4UwpfcrtR/cCSHPZG3%2bEMpbE/uLMe%2bQha%2bL88z4dXdIOnkDqAB4y%2bX6T/6r526Y0eu3nebzCAYV2UY3US/FxSLfcf9Acy8IG5%2bToPqX7dj7LWw55u4SV/KjQpahn8Iu/8aMcY4mzROqQKbohnGOPHGfgFZtyHrpRD/HgmnRJluMuyuc%2bEd5Tr2Olx8SrvKZp7doQ8/uM7XpzCV2Usy7kpP7lKGDNit%2bBw7Zdbv5zm%2bsL15%2bpCyIj26tEgfsDsPgnN0%2b3ZFh1i3Y/8WZtuuLKMbAIzQB10Jxhs7sIQgCIuulIWi70QjQ99Nu6H1CzyhEg9mnn7vIq1S/WPQbtHcycUHbZqSWtSvz29Wh2e%2bWRs14eVtkwbvXPdx1K51LGrXGj1q9zN61B6K1Xo0Inz7Mr1PQYreJz/F03/7UmYrTj8vhe/NfRwA7gzcn88IRP%2bdMsTm8HC8KOtP7lRwRexQPP33FTPAOEkf3P9FxfIEysCx8/4uQPbpH6jEeyyg4IAeu0FkyhI4na6E9XuuNBMaXJK5AEPt83/JC/75tzenp9i2rGR98zLcffPS9b75aXrfglR/9CtM1ZF1CrdjxzICsIv/4cA9ytFwZzEbsEfxIJB5EXAHB9DfCIBgPHaIMsDVEr1XJhc92AOYFpX%2bzUb8kxV2YnCABQ6woARCTMH0iC6j49NXmfMNmON%2bvU2KPbUzZOrJFzk4e8GyVsfWlcxelOW1Fy3R7cWZiAxDdLqI4nQdwj0O7oC0RD5Q2F55SYRWwsL2Kh7A0AcGQegGwj3gUAlD9vk0ha95GTwogM/yZctfzq/2/GWhhviZjq2rma0gy2srXKLbijJ5kODggHiffUsGZf8v/YrT7HyQ8H1yOKIzfL/CwvYpOkDoA/cKEF1g7OIwGGB4IT7KgMDpD9gtPzzxuSskh7ICEHg7kvo%2btyIEIG7YS1Z2A5BBgrtDMLKfLh7mROyXuYCIA8orkVoRAwRPOEEwQIQFgxAwPGGlxQwg%2bABhexRrv%2b0yIOZKA3d//k6w5a2S7ADAs563/DHhguWyY9taiF/qsRdk6fcHwOufnwlIkQcU3kgiDypJgyuKGUB4AEWP2K/o4RS9w/CElRVT08w0eshjRikhPj8INmUVsr/SEL/iMQFkxY/shaj7/GW6vWCpbvsUANz%2bP8tkeP872P8rfKBBh8QNRx6SH8f7O4PUfAYYXoDRIyi6gxAwfGH7chmE%2bxDfE%2bIFBPyuFPY5OMGurIb4VeJ97spQ42oHgPftRasIgBcOYLbCrgC4%2bJJ0E4Tb8eJyyv5mDq84PdSEwN8MLpXXRtdsYfjaPeigQiB0ioieMKhXeMIP5VPjfB8QnuQQ9gkIfhCq8hkIX4PMPyM58laaLhCZV1Z/DQCuO0rWQPxyN5og4w4AALsJoLiLA3z2rZkk/l6/kvRvGABCyPrS4DLRwKLKlK8AwjtRWj7D1QsQOkXkQZmD6OYK3i8iygoJxu8RUUK4/BgAhRj9hXrL3y9eXivZ5DVCOK5wgaj53FV2xA1HCeo%2bb7kbMwLqfxnsLwDYugFAkHB3f579tGe6ZD/SKIGoMpn3gminnDL0cAnD1%2b6oUgUgFJ1i0CFZH3SwBwwGGJ7IsgIspZUPEZPNm8f3QyP3i7Ej9gHEoQcH0S9nLRfPxeasg/i1oYE%2bsPo/4IJ7jmISvwLiV5ADdAIgHLCEh71IrAFs5rz/QhbVfqt/nOJ0yVaSLr6AQGmIJkvRpSJzgHBqaE0xi3ICQpkCGAKCAGGECQKlQo0z8lAeiyjNJ1cUYzbgMAeVbiYXhOLnIRH7FMDOgUNyuSsi9wWAPCk/L9k2bZRs2RukPtlrpX6b8X7zhhB79nq/8L4566w2%2bZkCex4sX7CGoRm6AYAcoJsN0D8DFPZogGbz%2b6Eh3mpCEADKxM0MUcWUiGvkEFXpHKLlMsDwIXQ4QhcgZAHjUDAM3i%2b8EQcV3%2bCKEnLFTcTc4KxGHpAt5AqEFWsOC5UJxcCdOSH9C34aYt%2b80YKwIkIdmzZ0eeABB8yzy2tuOUqeYygDHQ7wAgA5QBcAljMTAOqfBc8AiE6j8cnB1kcpdLUdRJoQ%2bC8M1eTU4UdKGEB48D2dIHAQTsWAIfcKAyDcg9QCNqicT6ktEJyF6Pc3T3nZGyJs2evXowSuO4ogPH8DxD/j5gByVyFW6iYAm%2bmArjMA4%2bLFmv8EX7QVpfOs9y/MhP27ARjiVKQodO0fVGRLQ1zCwkNd8p4Rx7ewoRrcoCoEQ4/mMBQeJohAicgmCC9AeAZrhWxwZQmB%2bAsgvIrYhIiDA0aiaToQTwzYkW235zw7uN%2bGdd%2b3Pb9hARzwM9j/AgC4HUWbmD3vWQYHeOAALwAg%2b90A5AeVQAAARGPD8wJf8b2Frv%2bvRva5w/213/01TBOlMMwl%2by04rFz%2bzUiC4JI74QodMHQCISIYhojBXfsFzSSeQaW5bHB5EYcxCKtNYxb5CCXwQfhe%2bcOwXTnuAT/PYf2LNjNHASLveQYAiHVuOMALADoA6CYAezcA5ACbAQCbIGyGMt2ObVz8%2b7B6WPe671ec8snWG6bJJgROK0rdbB1eLp8bdbyEAUbnMJeiD6UgEJqAwEGoZokY5RHULwDBx0EclN2YRcgdLPJQLo%2bIg4gDuSz8QK4vbI/sceQ957Zt2uC1Z2/wAYAOALoJAOsB3V8CeSsN%2bwcAYArEQmgJxGNNUJzxR3tJGp%2ba7UbdY0H06eK5cFWGeMXMvkVAyQ0dXiHXjXppC0FwI3wABBDCEcEwoj%2bxX/Q6i/gCawuZXwGB2XM26rbN63U7B0DiAw4IAFjhB2D3T4FZnY4XVpAD7iLTg3jGizJCDQjSE/mpD9aARgAARPL3EO5/PDWiUq4Y/cstDN/TEZ5h5QoB0YNhDAkqEbM8oruCYAYIFphBZDGdAgLWJWzA1ud12yaRfQFgTQBALw0Q2ccyOAubnNUQv6QBAL4jRBviizIk%2b9a0v60LU1McXiGcMCIIwshK%2bdmRh/PZqCMFBKLTgKELEIoeKBE5CEaXxsmMfsEMGMyAwUHQNXxXNneAjewPALYg%2b3cHgAbothctZ45tq8j%2b%2b/2ryKJMq3GVHCWpf99SFDdP4k0IIcMrxd5/ZJX874jbY361hY2oVBCy2wQxvNyEIftBdGucTMAgEByGHwRNp3SN3JcD%2bxsAZAHAHgQAewAdu0EPAXBsW0Pb4PfhgAT/FFq4xGKK75ef8Y9tRkbABRBoZp/ec1uNPpzzGCBsQfjGvFRMEHQCgd/3dXFFufJpJcI4CBNGKb3HWmJvNmaA9YEGqPgB%2bADADQf4HFvXMtoGowT22/KXfpMLLsyyQnyIAQH1v%2bSz246S%2bGFV4mkQRPsPI0dVy9GII6MO57IxvyxhI2tyuSPgDA8g%2bLq7AsGEK2Q2hEKl4CB4j4jWUALbAz0AJeBD/XsAwGPPe4Y5tmBBVIBaz1vxKzTAp/yWL1ga2C8ULMV0l/XZH0iMqlZIvAkhZGS17P/Q0dXyaIA4iPiAQIz%2bRZEBQ/EaJUJAvMNpBunSOEXw6VRTaNntdeRu9Ng2r3OjBLz23PXMUfwsYiMtg/8XDjhoz1sZEJ6/zIqNUIhxLijBDZ//mRxBGH0013SABSD8TXJ0jfIEvpeBeAW/98GY40XMDwSNc0RNHhtRlcvQT9iwCppF6Iqvq/LYsMp8NnBbNrL7PATTKnAjVoFr7mET9BIc8DQWQd8JHI2tsMAB/HMH5iHj%2bSse7qnsmBqFxPudQSAQXc7p4Yq%2bo6rkafh%2bIWC8jLiOuAdHfIj4GI4gZ3TCER9FHcj%2b05MFz72L5XADGmA11gA/xRQ4Dvb/ZpczgtxVVjjA8mShcSqct1Lqn7/y79bx//PqSP6Mi62SAAAAAElFTkSuQmCC' /%3e%3c/svg%3e" width="245" data-src="/assets/static/favicon.a53fa45.9bb7ffafafc09ac851d81afb65b8ef59.png" data-srcset="/assets/static/favicon.a53fa45.9bb7ffafafc09ac851d81afb65b8ef59.png 245w" data-sizes="(max-width: 245px) 100vw, 245px" class="g-image g-image--lazy g-image--loading"><noscript><img src="/assets/static/favicon.a53fa45.9bb7ffafafc09ac851d81afb65b8ef59.png" class="g-image g-image--loaded" width="245"></noscript></div><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate fa fa-chevron-left theme--light"></i></span></button></div><hr role="separator" aria-orientation="horizontal" class="v-divider theme--light"><div role="list" class="v-list v-sheet theme--light v-list--dense"><a tabindex="0" href="/" role="listitem" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__icon"><i aria-hidden="true" class="v-icon notranslate fa fa-home theme--light"></i></div><div class="v-list-item__content"><div class="v-list-item__title">Home</div></div></a><a tabindex="0" href="/articles" role="listitem" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__icon"><i aria-hidden="true" class="v-icon notranslate fa fa-newspaper theme--light"></i></div><div class="v-list-item__content"><div class="v-list-item__title">Articles</div></div></a><a tabindex="0" href="/contact" role="listitem" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__icon"><i aria-hidden="true" class="v-icon notranslate fa fa-envelope theme--light"></i></div><div class="v-list-item__content"><div class="v-list-item__title">Contact</div></div></a></div></div><div class="v-navigation-drawer__border"></div></aside></nav><!----><div class="container fill-height"><div class="container" data-v-fc2fa956><div class="d-flex" data-v-fc2fa956><div class="ma-s xs-sm-6 v-card v-sheet theme--light" data-v-fc2fa956><div class="v-card__text" data-v-fc2fa956><h3 class="primary--text font-weight-bold mx-0 display-2 px-xs-5" data-v-fc2fa956>
+            Hash length extension attack
+          </h3><br data-v-fc2fa956><span class="px-xs-5" data-v-fc2fa956>Mdb_mob_eax</span><br data-v-fc2fa956><span class="px-xs-5" data-v-fc2fa956>Date: March 29, 2022</span><div class="pa-xs-5 body-1" data-v-fc2fa956><br data-v-fc2fa956><div data-v-fc2fa956><h1 id="tool"><a href="#tool" aria-hidden="true"><span class="icon icon-link"></span></a>Tool</h1><p><strong>You will find the explanation below the tool.</strong></p><div class="container px-0"><div class="row py-0"><div class="pb-0 col-lg-4 col-12"><div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--filled v-text-field--enclosed"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label for="input-71" class="v-label v-label--active theme--light" style="left:0px;right:auto;position:absolute;">Original message (use URL encoding)</label><input id="input-71" type="text" value="Admin&amp;false"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="pb-0 col-lg-8 col-12"><div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--filled v-text-field--enclosed"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label for="input-74" class="v-label v-label--active theme--light" style="left:0px;right:auto;position:absolute;">Original hash (hexadecimal)</label><input id="input-74" type="text" value="5ed55f4f45eae63b83b0da2876997cfdbe45280587a69e29f2d5553888c62e72"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div></div><div class="row py-0"><div class="py-0 col"><div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--filled v-text-field--enclosed"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label for="input-77" class="v-label v-label--active theme--light" style="left:0px;right:auto;position:absolute;">Append message (use URL encoding)</label><input id="input-77" type="text" value="&amp;viewFlag=True"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div></div><div class="row py-0"><div class="py-0 col-lg-2 col-12"><div class="v-input py-0 v-input--is-label-active v-input--is-dirty theme--light v-text-field"><div class="v-input__control"><div class="v-input__slot"><div class="v-text-field__slot"><label for="input-80" class="v-label v-label--active theme--light" style="left:0px;right:auto;position:absolute;">Key length</label><input id="input-80" type="number" value="6"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div></div><div class="row"><div class="pb-0 col"><h4>Extended digests and inputs:</h4><p>WASM not loaded</p></div></div><div class="row"><div class="pt-0 col"><h4>Note:</h4><p>
+        Check the length of the hash if you don't see your algorithm between the solutions. The green highlight is to indicate what to copy as input for your new extended digest.
+       </p></div></div><hr role="separator" aria-orientation="horizontal" class="v-divider theme--light"></div><h1 id="prerequisites"><a href="#prerequisites" aria-hidden="true"><span class="icon icon-link"></span></a>Prerequisites</h1><p>A cryptographic hash function is a one-way function that takes an arbitrary length input, and converts it to a fixed size output, called a digest or hash. Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">h</span></span></span></span> denote a good cryptographic hash function, then it should have the following properties:</p><ul><li>Be deterministic. Given the same message, it always outputs the same digest.</li><li>A small change to a message must lead to entirely, uncorrelated, new digest.</li><li>Collision resistance: We should not be able to easily find two different messages such that they generate the same digest: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false">(</mo><mi>m</mi><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mi>h</mi><mo stretchy="false">(</mo><mi>m</mi><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">h(m1) = h(m2)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mord">2</span><span class="mclose">)</span></span></span></span>. Note that given the nature of the hash function, these messages must exists. There is only a finite number of outputs possible, while it can have any length message. The goal is to make it very difficult to find such messages.</li><li>It is resistant against second pre-image attacks: given the message <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> we cannot easily find another <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>m</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">m'</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.751892em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo><mo>=</mo><mi>h</mi><mo stretchy="false">(</mo><msup><mi>m</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">h(m) = h(m')</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.001892em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li><li>It is resistant against pre-image attacks. Given the digest <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span></span></span></span>, one cannot easily find a message <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo><mo>=</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">h(m) = d</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span></span></span></span>.
+<br><br></li></ul><h2 id="applications"><a href="#applications" aria-hidden="true"><span class="icon icon-link"></span></a>Applications</h2><p>Cryptographic hash functions are not just for checking integrity of a file after downloading.</p><p>They are also used for password verification. Instead of storing passwords in a database, the hash of a password is stored. That way, leaking the hash does not automatically leak the password. (It is slightly more complicated, see <a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html" target="_blank" rel="nofollow noopener noreferrer">OWASP cheat sheet for password storage</a>)</p><p>Other usages are in <a href="https://en.wikipedia.org/wiki/Digital_signature" target="_blank" rel="nofollow noopener noreferrer">digital signatures</a> or as <a href="https://en.wikipedia.org/wiki/Proof_of_work" target="_blank" rel="nofollow noopener noreferrer">proof of work</a> for blockchains.</p><p>The usage we are interested in is that of a Message Authentication Code (MAC).</p><h1 id="attack"><a href="#attack" aria-hidden="true"><span class="icon icon-link"></span></a>Attack</h1><p>Given a digest of a secret key appended with a message, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>K</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi>M</mi><mo stretchy="false">)</mo><mo>=</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">H(K || M) = d</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mord">∣</span><span class="mord">∣</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span></span></span></span>. One can generate a new hash of a new message appended to the old message, without knowing the secret key. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>K</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi>M</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi>p</mi><mi>a</mi><mi>d</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi>M</mi><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><msup><mi>d</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">H(K || M || pad|| M2) = d'</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mord">∣</span><span class="mord">∣</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord">∣</span><span class="mord">∣</span><span class="mord mathdefault">p</span><span class="mord mathdefault">a</span><span class="mord mathdefault">d</span><span class="mord">∣</span><span class="mord">∣</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.751892em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>.</p><p>The following algorithms are vulnerable:</p><ul><li>MD4</li><li>MD5</li><li>SHA-0</li><li>SHA-1</li><li>SHA256 and SHA512(only non truncated versions of SHA2)</li><li>RIPEMD-160</li><li>WHIRLPOOL</li></ul><p>All algorithms above are based on a Merkle-Damgård construction.</p><img alt="Hash extend image" src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 528 229' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-8e3724f8b94ada14f17437f2daf7bd75'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='40'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-8e3724f8b94ada14f17437f2daf7bd75)' width='528' height='229' xlink:href='data:image/svg%2bxml%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAEAAAAAcCAYAAADRJblSAAAACXBIWXMAAAsTAAALEwEAmpwYAAAJ8UlEQVRYw%2bVZSVNbyxW%2b92pmEIOYEYORsQ0YOxjww4CDjRk0YWYkgbENNgik21dCzBrAeSTkxa5kkfjFSb1KnFVS5V0qlcVbxGtvssgqlSyTTf5CFinydd%2b%2bstDj2Y8YVyWVrvqqW326%2b3af7nPO1y1BeHcShf/zVAr0AzcBJzAIjABjQBlQAUwDE4AXGAJcQA8wzvv8TyvRDNQBVyVJ%2bgR5G3DRYDBcQ14DVFMZQH9/C7iu0%2blouwHgDnAF0GmDueJ%2bwZXws9yZ8Kl1CX8aWpvs%2btNC6/9R0osXL0qPjo70tLy4uGjIlkOmSyaT5dpvW4mN5e4km5zIoU1WzKyj6fZhQPDs%2bj5ojmemBBEpNzdXouWlpSXH8vJyI3KbJocCzKi7QJuazWapsLCQtSWEVASDwTqtXUPHRfGbTnxkY4afBJ8Rv3MAC2Di5TygEMjHSSlm5bjfzPvmoI9JG8t9isXrM8rGkxrQXd3a2pp7%2bfJlTla9uLGx8fD169fpfr29vWyxe3t7pZDd/%2bNf/qRTT0DAjkne4LgENADNQBfQDdTyhYg8nwQWee4H7vHybd6eyh4BPqACGAFmgDp33C9lmsP7ko/b6g06T8BDNw2wAOcAK2y%2bmDtEW2dnJ52glfuAc01NTbU5OTklKBdzn6Gliv7%2b/q6a%2bloqKx3enu5yJQP3MSkP8AlfyDgQALxAK99diSugkiko7jvn3PWVoUx3vIDCuTtjRV4NlANUsaVUgTwvoSflNCbg4N7cDlDbbQGqADrxSSDAPfs9YBWo5aCe/iGvv8/LtwHtlHQAWzxK9AGS9sFOf590M%2bg6dtpsNaVC98Kg9OJfvxfuxCY%2b2FedhRMU%2ba5Su9JRe4dLMPDdp8qxwePTHRc7Ojry6%2bvr6cItaKMpoFCv1zcgetA2Baf9eH90TPz50ZdCob1Eb6sv02WZntD9aEik%2bUBsXPTszwlZzvVUShAz8kwcS9FotOjrBkilUnnPnz83ZI1pyvIz9HeRqJNEeNcCKKqEm1kJV6qFI3te1ZxfUNOc4pwjgP756cFNBmF4ZyYdbc404UMsl2W5wGazHZO1tbUxYSgUykM0yDzSVBnXuWnMApe5abm4SVBzWQbagSDnDMPALe6IM3ecmuUlPkY7/FFrfn5%2bJ/UrOIGmjxLr3SShHiE5IXjkOCsrilIApNsMLK8Lj8maJssDjFm718gXVs59DN3pQu48y3h9LpfR00V31MZzSVW%2bdOL83rx5Y9ZM4cOdRTyAmBlgOUW6Xk6ky%2bNkhy6ySI5E2O8psnVsDMisANuN6ampr3zj1atXusPDQ8t/Mr/qpissz7da2WmbnQ2YcNoKOTdJt3Nu%2bdIs8iuMMu5juZuvz5OYY2t1UsKVxcrUTmRXU0LBiBxn27BComyHd6Iykw3Luzgdu%2byorimyfoHE2ASj333G5FeHRsV2zxTjGPMLi7rg6ipTQF1dHXyA6mcu3LoiOnqaJUdvi9ji6hAb%2b1rFtsnetP9xhnd4vqvLUjibixwh2bRZzGKYJ8nSv08kS0wY3ldNQU40D8tJxyzZLFlTyGBEUdKOzhNJUvm13vCTYkyoB3LKHYRlZU0lMiRhgrz9lrxnXY8QW1QhjOjEFPm9Hhp8QdsAked1HjnRovYnLfjeDVXxiujdvffB8bKEE4gLQC6r21zSfIH9trynHyG7jkckFkhFw2KGn9B5SKK2OXRoeUDWpx8raxdp/SNFPQmQWyC3Xw5/L/c%2bWR8NKxHqxYWgsiZ5EtMa3bXiqDZyAmTj86hi/VOzaTN0k2QlFFAMZVbgW91QJvUvwkIkIvHjXsT7aqSonDNNWl/Fx27ksmK%2b5iowRlHgVPTbwDzQMhKftfjXV9jAWEC9d22dLSj/8QujU044vHKcOaBpsq3HDqf5fn94v8otxyu136Mkngs5DWHC9flf6ofDyXosqJjZ8UZQnXjS3%2bmM%2bxZhiyMIX0uU7iKc9bNLUXRUHFfi7NteKNJJEuy7XcEf5N%2bSU9WjZJv5nKnoAwP6uTHGQ8oqMd44mOIUfi9DwZRCuznzpFSatpnl9NnlTvh0VHt0AD3swTyYnDFXPetJ29sdkqpWT0mg2puaLJ%2boPxKHSOKcJh8iSbvqVPzVdw8GTa7Qk9IBOaXeBJd/Jw1j59TY7Ku5%2b6MWyRVO1eBEpUmR82DW8OTPX5gCPw3XDqxPFsx/ETEf56hzKnOUPy3yrh5YnPujZk9qsmLqwed6KMShNRs7WLD8HfcV//OQCZFBotHhF0d/MDz9x2/0/cpoLr9YWfgpoKfCTC9YzmzO8LOFz6QYiVYokUgx7H1iXtkYVBcYKIMHLWMXB7LViiNYTpTIfT/ZbGcLjM82upLTbGF%2byLeUsD2kRJbGyM45Lm91PWvTjYSe5ATIVvNaeLVuY3Pzpl7SXeFvCfRIX%2bTcoQfcQ7X33YQeDvYyzMprC3wpeVITWMxsE1s02W4IR2OtodXVHt63kXMNOqdmzhuKvxFnHt%2bZF4RflQgra2FJiSj5JBKxRBXl/AzZvpLZ9np0Rxwnu40bipwDm76M8gUWJmMh1e7lpGmC7Jw/iCznwBle85J4DTvCMaKaFKIK5LWxULAktr5%2by2g00onflnRSuyiJlxAbBjh56uaXL9PmWsSxSGJjDaGnLKKMrIdU8wnHa%2bTYxvng8jLdpFb0vwvi0M2Z4hjG8gM3JIPOaswxMefdF/aKJz2esBThMT4z4ThXHpDwsTpEBfvbcoqVh4NP055/SE5VqSbwW8kpJ1nZtXrI5Ukr5KXvoORpJ4s7hFRU42CLvR6GCZAEu%2bE5V76vjWUXuj5n5dKy9F0hk4xJHOb3Pstpi6dMj8JHtjVP3%2biSkzluGtIAlC3Iz1PZJNkxoFxzjEHKSZ1WN0LieShXHpcnclFHmZ/wMByViopOvl6srKyw/Cd//aegOUF825g1ln1USZh%2bffUjPORqVJiGQYSgWqCag5YreWgSgQuYWDW8O0UVUI%2bdqeJy8IDkJdRVoo0dE65EnQO/bSqP2Pv6%2b4dOpcCDwah2sqoAB8/tQLWLbU6C7XyF49LHuw%2bcLEtqOQ2FFkzETIE%2bZqqYjDEMvE6TmbTY7nrH%2bJwjHP/mymdG98qh0b38Q4P78Y8Nnjt/U5UTe8sGh6JTZ7X49AK1nRbeInGszUmpbz70zvElne6dcp1RfaXretAPpxVAmPblufa9RtfBkN61N2p2pSYLEXWsZ/n4cSrlZCnoGEZi3%2bF3dPMHf%2bvup/OU2c1xkkbzIf6E1keJDGWu4DHSmZ%2bAM0zl/Kpr5Q8i9BaXx5/c7Nxrm3gbTVaCkEY5RXHTYJvVsz9XA3ZHqWsNew1W3woLeNkGBZj%2bmxVAL0D08eI8f9lp53%2b01HLykssVcZO3a%2bB/sHTzR9qKj/3%2b92%2b20FgHt/PImQAAAABJRU5ErkJggg==' /%3e%3c/svg%3e" width="528" data-src="/assets/static/hashExtend.7a66ecf.c133cb686947b6d06da1ee21d55f4b6f.svg" data-srcset="/assets/static/hashExtend.7a66ecf.c133cb686947b6d06da1ee21d55f4b6f.svg 528w" data-sizes="(max-width: 528px) 100vw, 528px" class="g-image g-image--lazy g-image--loading"><noscript><img src="/assets/static/hashExtend.7a66ecf.c133cb686947b6d06da1ee21d55f4b6f.svg" class="g-image g-image--loaded" width="528" alt="Hash extend image"></noscript><p>First, the message is split into chunks. In the example above this is 5 characters, for SHA-256 and MD5 it is 64 bytes total for one chunk. After that, the message is padded. Some algorithms also use the length of the message in the padding. For example, SHA-256 pads until it is a multiple of 56 bytes, after which the last 8 bytes are used to encode the length of the message, often in bits. Note that there is a different in endianess of the padding! SHA family uses little endian, whereas MD5 uses big endian.</p><p>The original message, including padding will then be used to output the digest. We can extend said digest without knowing the actual value of the original message! We simply take the digest as state and add new data by hashing it further.</p><p>When generating a new message to append, we need to know the length of the key and the message, to make sure our padding matches. This if often not known, luckily we can simply try a few different lengths and see if it works.</p><h1 id="example"><a href="#example" aria-hidden="true"><span class="icon icon-link"></span></a>Example</h1><p>Let's say we get the following digest: <code class="language-text">5ed55f4f45eae63b83b0da2876997cfdbe45280587a69e29f2d5553888c62e72</code>, which is the result of SHA256(secret || &quot;Admin=false&quot;). Suppose we didnt know the &quot;secret&quot;, but only that it is 6 characters long and that the original data is &quot;Admin=false&quot;.</p><p>We can still calculate the hash with the append data! For example, we want to add: &quot;&amp;viewFlag=True&quot;. The new digest then is <code class="language-text">334d39883fb471d657d3bd8779bbc2659bd1e07964e20a8f06e3bd12490c12b1</code>.</p><p>Note however, that the extra data is not directly appended, but first the padding is included. This is because the original digest is not just the result of the message, but also the padding that came after the message. If we extend with new data, we do that after the previous padding. Thus we get as input (URL encoded):
+<code class="language-text">Admin&amp;false%80%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%88&amp;viewFlag=True</code></p><h1 id="defense"><a href="#defense" aria-hidden="true"><span class="icon icon-link"></span></a>Defense</h1><p>One should not use hash functions that are vulnerable to length extension attack directly as MAC. Instead, one can use <a href="https://en.wikipedia.org/wiki/HMAC" target="_blank" rel="nofollow noopener noreferrer">HMAC</a></p></div></div></div></div></div></div></div><footer class="v-footer mt-5 v-sheet theme--dark v-footer--padless"><div class="primary white--text text-center align-self-md-stretch v-card v-card--flat v-sheet theme--dark rounded-0" style="width:100%;"><div class="v-card__text white--text text-h6"><div class="row no-gutters justify-center">
+      2022 — <strong>Mdb_mob_eax</strong></div><div class="row no-gutters justify-center"><a href="https://github.com/Michel-de-Boer-dev" class="text-h6 pl-2 v-btn v-btn--text theme--dark v-size--default"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate fab fa-github theme--dark" style="font-size:32px;"></i>Michel-de-Boer-dev</span></a></div></div></div></footer></div></div>
+    <script>window.__INITIAL_STATE__={"data":{"article":{"path":"\u002Flength-extend\u002F","title":"Hash length extension attack","author":"Mdb_mob_eax","date":"March 29, 2022","excerpt":"Hash length extension explained.","published":true,"preview_image":{"type":"image","mimeType":"image\u002Fpng","src":"\u002Fassets\u002Fstatic\u002Fhash.9e8309c.17c8ddd91c374ca68e5b6fa734cbeaad.png","size":{"width":2112,"height":916},"sizes":"(max-width: 2112px) 100vw, 2112px","srcset":["\u002Fassets\u002Fstatic\u002Fhash.1b91758.17c8ddd91c374ca68e5b6fa734cbeaad.png 480w","\u002Fassets\u002Fstatic\u002Fhash.3df3210.17c8ddd91c374ca68e5b6fa734cbeaad.png 1024w","\u002Fassets\u002Fstatic\u002Fhash.9e8309c.17c8ddd91c374ca68e5b6fa734cbeaad.png 2112w"],"dataUri":"data:image\u002Fsvg+xml,%3csvg fill='none' viewBox='0 0 2112 916' xmlns='http:\u002F\u002Fwww.w3.org\u002F2000\u002Fsvg' xmlns:xlink='http:\u002F\u002Fwww.w3.org\u002F1999\u002Fxlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-c7e603ad0ee4228ae44a3f0e04500778'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='40'\u002F%3e%3c\u002Ffilter%3e%3c\u002Fdefs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-c7e603ad0ee4228ae44a3f0e04500778)' width='2112' height='916' xlink:href='data:image\u002Fpng%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAEAAAAAcCAYAAADRJblSAAAACXBIWXMAAAsSAAALEgHS3X78AAAIPElEQVRYw81YaXfiuBLN\u002F\u002F818%2bHNmfO6pyfpnmwkgbAEQkJYgsEG22B2MGDX1C0jYxxDE2bmnadzhIxLllS3Fl3pjBKK7\u002FvSep5Hq9VKWlWiz%2bin%2biYV9FXyQ\u002F2S5g\u002FXwK3ne5E2qKqPH5GfMtdZdKBoRRmPx1QsFqlarVKhUJDnfD4v1XEcGg6HlE6nKZfLybunpyfpVy6XKZPJSH8FmB9bYHyuQ4b4DHDHGGYHgEMDwfpQstPpULvdlnYwGEjb6\u002FVEZts2GYYhFX10XafX11cBDe\u002F2AaCsmKRstG\u002FNeKeq3qCq0aDXVpXKWoVetDeq8\u002Fv3rkbZKoNeL0mfU0A7W63XZA5salk6dR2Llqz0oYEAwHK5DAGKFwXaPismjZvUR727K2foe\u002F6GUtyiZirsaY2yANPoNOm6dE%2b3zw8im8ynn\u002FeAtbeWQW94kKviHTnjwc4gKo4ty6JutythoQYHEHiHPqpCBpDgIR\u002FjOfAGWPP%2b5ZF%2bsGLpSu6D%2b8bb0XRMs8Wc%2biOH1myw1XrFhlrSzJ3TYDKS\u002F3qvI7JPAwDU1Idzd0EuDxxNdCqZ3d\u002Ffh5aPvk%2blUuH30QKgIEuycts2qNys0Jtel4UnxbC3eYYchvnvwzl9SV9QpV2jX1Nf6Y\u002Fsn\u002FR75jt7x7WEgwLy00kQA6Rfc\u002FTcfKXLpxR95UERU6vlKox5ZVHTNMXFJ5OJxDfiH3EPL%2bj3%2b9IPz9PpVJ4rlYrIIRNQZhNRyOh3xYURy227Q52%2bSaPZ%2bEOCVN8MJkNpYXUUh\u002F8jZGEw5Q3w5M9aXwCwhz0ZHPHfG\u002FXJ6LEyY4dms5lkdmTzUqlEj4%2bPdHNzI8oACGR8JLuHhwe6u7uT3QAWx38o32w26eLigq6urkjTNJkMCQzW\u002FPb4Q6yJ%2bvhWoD%2bfbqn0\u002FnJw6wRI1\u002FwtKsLnj%2bwlnecu5f9wOjopAYa7ACyhmW1pgbZKZq7rftj\u002F8W40GomVozIlR5igLhYL6YeCZ5GtV4mLWCwXXN3ExIixvLVHk8WU2uw9LQ6fuuwMdSq\u002FV0iz2hK2Sd5z5C6wolytKDuBxm5lDXuJGRluvy%2bjw1uiOwLAwDvIJWmxbD6f02Q8EYXAIZAjAAw8ajadhYBBhv5qbIQaeAW4RvohTYV8gbKZR7q%2buibbtE5y%2b6N4QLwqhZJIDBYfBQDPKmTq9brkEoTBPYcHwurbt2\u002F0\u002FPxMrVaLLi8vJcQQUgglKAqwVQEgAAkt8gvCD%2bM1Gg3JQUk7x6cA2KdUHFkFQJIM1o17QK1WEwVhcVgbSiFs8IyKZyXD9%2bIh3AfJVoXMPoWiu9E%2bMvW3AYgPjAXvQxrgqEUlLQJhEM0nn6W1\u002FBuuDUCr\u002FHOIWh%2bi%2bNHng1R4zIqp5LaKMUQV30pBz\u002FM\u002FHKSicgVAfEGSQNUhx\u002FN2KLJq1zFekrSWU6oAgKyKPbnI9LJptphft0JhQ%2bczgGnTkJNXmWM26uboU3lv8a4xFd5vW9bOolz2iFeWj2eBa\u002FcjzPBn7hrv07H7VG8HhMngswbC61SXj89zhq0PyqfKabphXg1CpIrZHxDOCjqDcMsZODohrNLtOUxGlpTKZMnodHcWtWCLW\u002Fz9dOFSOs8HFk5y8X0efOOtXZet1x4yv2AuYg0%2bUujeYERDBtrmtlKrk9ntbsYK%2bjib70GysJuB0zT4oKTegUJj27RYBq4DOWq4DYIIgRJjIVA4mNcX5MNEx8wQ3rBwNwch7tfp9UNAuqwsFqrKnBW3nOGGYi9Jt3o0mkx3OEWJwf6SPqcLZqPnuSv6zrW8MYAfAQpAupscAyBMHlf9BwsEMboqppjJ3tIFk6MUn2tAts6ZLuMwBZBBnEC88B40GgRMAAAD%2b8qC\u002F6S%2b0C\u002FXv9E7h4Eq1mC4E38ug2DYW6WVgqoAgP5wvPEQXywWLfAYhMTWi9Y0Z5ITnEJdcnkqdarwN1WUZp4wmy%2b2xIm9q21u%2bQpA8DZGWfFHeHa5RcAueR2YB4bGPNPFTAhZYGgOAbAoWB9eMJ5OyOZYRZbNZrNUeA7oKehybxgo\u002Ft7W5bibSt1Rtalt5H1hchgQcsfp0yUTlY4dLBITs7Pyic4lTTd4X3fotVQgX88yis%2b82fNZvpMnat1L9W32ArNIq26ZdA6tbKHAC\u002FbYAK6sRXKBxcSN56q98Rr7VUafq13hyTjUDD4YYYyRHrTL6fFECHswMjYIR11rB2SEj8jqmNzqmORynzYnI20T902m0QAQVte7lsgbfBYw2eJy\u002FNUbLOPti61octggKb6UnsjjRfu8WH\u002FcYaUr5DdvyQcARp78dppo0CSLQczk8hLvM7Zeo6OF3tRhJlgpF3mBNfI1\u002Fs56Cb6v\u002F%2bD6nd%2blyDefyWfvEo%2bKXaWJBxy6nrI5BOLvkBjjz%2bE5gUNEhQXA2D4H8gm7vzOa7GbifRl6TwiosTC3F%2b4WmzD1vUMpf78HJO2nYm225py9AYqhIgG2unaYBLsbC8d3BiFHvOBeLAcgMfaGo93dwN%2b2qvqRGijrhElvC\u002F7mHdar1q5AkPH8reLR58\u002FcCSL7QiHLGUjFM7xC3dZqHSuQcT%2bbrY0EaW%2bsjsU1DVP6w1pohVNMIixOgR1fbFSGEGSvwdyD8VSSbPB\u002F8PG%2bcV%2bNA\u002FEzAI4lKvACeAWUXSyDNvod7hdDubSrow8uOzyA93Hd7vIxWKOWZcglSs1o7lyCnFrOjrle\u002FtlZ4dDiT73ujs6DO8sfhRu5sQJhw76P67DV%2bl8C4FjLHHPgOAXA%2bDywdLDLrMWr8KxyyN%2b5CzgJgP9l2YbaSq6%2bwPTOmdHhChw3xf\u002FEeeDs\u002F1n5qLfg3g%2b3ybi1ggfEr8FOLX8Bz58v8aparmgAAAAASUVORK5CYII=' \u002F%3e%3c\u002Fsvg%3e"}}},"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.8951d065.js" defer></script><script src="/assets/js/page--src--templates--article-vue.c0873d9a.js" defer></script><script src="/assets/js/vue-remark--articles--length-extend-md.cc5c3d38.js" defer></script>
+  </body>
+</html>
